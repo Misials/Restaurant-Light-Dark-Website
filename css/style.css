@@ -66,7 +66,6 @@ body {
 	background-color: var(--body-color);
 	color: var(--text-color);
 	line-height: 1.6;
-	min-height: 300vh;
 }
 
 h1,
@@ -125,6 +124,21 @@ img {
 	gap: 1.5rem;
 }
 
+/* ============ BUTTONS ============ */
+.button {
+	display: inline-block;
+	background-color: var(--first-color);
+	color: #fff;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: var(--first-color-alt);
+}
+
+/* ============ HEADER ============ */
 .l-header {
 	width: 100%;
 	position: fixed;
@@ -225,4 +239,27 @@ img {
 .show-scroll {
 	visibility: visible;
 	bottom: 1.5rem;
+}
+
+/* ============ HOME ============ */
+.home__container {
+	height: calc(100vh - var(--header-height));
+	align-content: center;
+}
+
+.home__title {
+	font-size: var(--biggest-font-size);
+	color: var(--first-color);
+	margin-bottom: var(--mb-1);
+}
+
+.home__subtitle {
+	font-size: var(--h1-font-size);
+	color: var(--title-color);
+	margin-bottom: var(--mb-4);
+}
+
+.home__img {
+	width: 300px;
+	justify-self: center;
 }
